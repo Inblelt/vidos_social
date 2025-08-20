@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>VideOS — соцсеть</title>
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>VideOS</h1>
+  </header>
+
+  <main>
+    <section id="auth">
+      <h2>Авторизация</h2>
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Пароль">
+      <button onclick="signUp()">Регистрация</button>
+      <button onclick="signIn()">Вход</button>
+    </section>
+
+    <section id="postBox" style="display:none;">
+      <h2>Создать пост</h2>
+      <textarea id="postContent" placeholder="Что нового?"></textarea>
+      <button onclick="createPost()">Запостить</button>
+    </section>
+
+    <section>
+      <h2>Лента</h2>
+      <div id="feed"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
